@@ -11,7 +11,11 @@ nav
 {
     position: relative;
 }
-
+img:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 nav .conta
 {
     box-shadow: rgba(48, 48, 48, 0.1) 0px 2px 2px;

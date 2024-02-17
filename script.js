@@ -10,17 +10,19 @@ btn[0].addEventListener("click", function () {
   const cartCounter_text = document.getElementById('cart-count');
   const favCounter_text = document.getElementById('fav-count');
 
-  let cartCount = 0;
-  let favCount = 0;
+  let cartCount = localStorage.getItem('cartCount') || 0;
+  let favCount = localStorage.getItem('favCount') || 0;
 
   function updateCartCount() {
     cartCount++;
     cartCounter_text.textContent = cartCount;
+    localStorage.setItem('cartCount', cartCount);
   }
 
   function updateFavCount() {
     favCount++;
     favCounter_text.textContent = favCount;
+    localStorage.setItem('favCount', favCount);
   }
 
 
@@ -31,4 +33,7 @@ btn[0].addEventListener("click", function () {
 
   addToFavButton.forEach(function(button) {
     button.addEventListener('click', updateFavCount);
-  });
+  }
+  );
+  cartCounter_text.textContent = cartCount;
+  favCounter_text.textContent = favCount;
