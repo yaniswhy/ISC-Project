@@ -53,6 +53,7 @@ nav .conta .menu-button .menu-button-img
 {
     width: 40px;
     cursor: pointer;
+    padding-right: 20px;
 }
 
 ul
@@ -71,19 +72,19 @@ nav .shop-numbers
 }
 
 nav .menulinks.active {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    flex-direction: column;
-    background-color: rgb(232, 14, 87);
-    width: 100%;
-    left: 0px;
-    top: -500%;
-    padding: 20px 0px;
-    transition: 0.5s ease;
-    top: 100%;
+
+  position: absolute;
+  background-color: rgb(232, 14, 87);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+  width: 100%;
+  left: 0px;
+  top: 0;
+  padding: 20px 0px;
+  transition: 0.5s ease;
   }
   
   nav .menulinks a {
